@@ -1,24 +1,15 @@
-// This is variable with block scope
-var name = 'Fred';
-// Following with let name = 'Paul' would cause an error
-/*
-var name = 'Fred';
-var name = 'Frederic';
-This would not cause an error but it would overwrite the first declaration of name
-*/
+let firstName = 'Fred';
 
-if (name === 'Fred') {
+if (firstName === 'Fred') {
   let hobbies = ['Sports','Cooking'];
-  // this log will work
   console.log(hobbies);
 }
 function greet() {
-  var age = 32;
-  var name = 'Paul';
-  console.log(name, age, hobbies);
+  let age = 32;
+  let firstName = 'Paul';
+  console.log(firstName, age);
 }
 
-// this log will not work
-console.log(name, hobbies);
+console.log(firstName);
 
 greet();
